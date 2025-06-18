@@ -1,10 +1,7 @@
 #include <stdio.h>
 
-/**
- * main - Prints the alphabet in lowercase, then uppercase, followed by a newline
- *
- * Return: Always 0 (success)
- */
+/*Prints alphabet in lucase, followed by newline Return: Always 0 (success)*/
+
 int main(void)
 {
 char letter;
