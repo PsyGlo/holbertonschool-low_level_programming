@@ -1,16 +1,19 @@
 #include <stdio.h>
 
-/*Prints alphabet in lucase, followed by newline Return: Always 0 (success)*/
-
+/**
+ * main - Prints the alphabet in lowercase, then uppercase, using putchar
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-char letter;
+	char c;
 
-for (letter = 'a'; letter <= 'z'; letter++)
-putchar(letter);
-for (letter = 'A'; letter <= 'Z'; letter++)
-putchar(letter);
-putchar('\n');
-
-return (0);
+	for (c = 'a'; c <= 'z'; c++)
+		putchar(c);
+	for (c = 'A'; c <= 'Z'; c++)
+		putchar(c);
+	putchar('\n');
+	return (0);
 }
+
