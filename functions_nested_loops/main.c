@@ -5,14 +5,17 @@ int main(void)
 {
     int r;
 
-    r = _islower('H');
+    r = _isalpha('H');
+    printf("%d\n", r); /* Should print 1 */
+
+    r = _isalpha('o');
+    printf("%d\n", r); /* Should print 1 */
+
+    r = _isalpha(108);
+    printf("%d\n", r); /* Should print 1 */
+
+    r = _isalpha(';');
     printf("%d\n", r); /* Should print 0 */
-
-    r = _islower('o');
-    printf("%d\n", r); /* Should print 1 */
-
-    r = _islower(108);
-    printf("%d\n", r); /* Should print 1 */
 
     return (0);
 }
