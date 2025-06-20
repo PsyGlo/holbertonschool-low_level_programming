@@ -1,19 +1,11 @@
 #include "main.h"
-#include <stdio.h>
 
 int main(void)
 {
-    int n;
-
-    n = add(89, 9);
-    printf("%d\n", n); /* Should print: 98 */
-
-    n = add(-5, 15);
-    printf("%d\n", n); /* Should print: 10 */
-
-    n = add(0, 0);
-    printf("%d\n", n); /* Should print: 0 */
-
+    print_to_98(0);
+    print_to_98(98);
+    print_to_98(111);
+    print_to_98(81);
     return (0);
 }
 

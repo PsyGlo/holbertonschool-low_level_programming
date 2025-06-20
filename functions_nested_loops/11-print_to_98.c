@@ -18,3 +18,36 @@ void print_number(int n)
     _putchar((n % 10) + '0');
 }
 
+/**
+ * print_to_98 - Prints all natural numbers from n to 98.
+ * @n: The starting number.
+ */
+void print_to_98(int n)
+{
+    if (n <= 98)
+    {
+        for (; n <= 98; n++)
+        {
+            print_number(n);
+            if (n != 98)
+            {
+                _putchar(',');
+                _putchar(' ');
+            }
+        }
+    }
+    else
+    {
+        for (; n >= 98; n--)
+        {
+            print_number(n);
+            if (n != 98)
+            {
+                _putchar(',');
+                _putchar(' ');
+            }
+        }
+    }
+    _putchar('\n');
+}
+
