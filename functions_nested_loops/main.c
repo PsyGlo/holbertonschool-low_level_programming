@@ -5,17 +5,25 @@ int main(void)
 {
     int r;
 
-    r = _isalpha('H');
-    printf("%d\n", r); /* Should print 1 */
+    r = print_sign(98);
+    _putchar(',');
+    _putchar(' ');
+    printf("%d\n", r); /* Should print: +, 1 */
 
-    r = _isalpha('o');
-    printf("%d\n", r); /* Should print 1 */
+    r = print_sign(0);
+    _putchar(',');
+    _putchar(' ');
+    printf("%d\n", r); /* Should print: 0, 0 */
 
-    r = _isalpha(108);
-    printf("%d\n", r); /* Should print 1 */
+    r = print_sign(-1);
+    _putchar(',');
+    _putchar(' ');
+    printf("%d\n", r); /* Should print: -, -1 */
 
-    r = _isalpha(';');
-    printf("%d\n", r); /* Should print 0 */
+    r = print_sign(-523);
+    _putchar(',');
+    _putchar(' ');
+    printf("%d\n", r); /* Should print: -, -1 */
 
     return (0);
 }
