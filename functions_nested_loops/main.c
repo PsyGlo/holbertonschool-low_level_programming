@@ -5,17 +5,20 @@ int main(void)
 {
     int r;
 
-    r = _abs(98);
-    printf("%d\n", r); /* Should print: 98 */
+    r = print_last_digit(98);
+    _putchar(',');
+    _putchar(' ');
+    printf("%d\n", r); /* Should print: 8, 8 */
 
-    r = _abs(0);
-    printf("%d\n", r); /* Should print: 0 */
+    r = print_last_digit(0);
+    _putchar(',');
+    _putchar(' ');
+    printf("%d\n", r); /* Should print: 0, 0 */
 
-    r = _abs(-1);
-    printf("%d\n", r); /* Should print: 1 */
-
-    r = _abs(-523);
-    printf("%d\n", r); /* Should print: 523 */
+    r = print_last_digit(-1024);
+    _putchar(',');
+    _putchar(' ');
+    printf("%d\n", r); /* Should print: 4, 4 */
 
     return (0);
 }
