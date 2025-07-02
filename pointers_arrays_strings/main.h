@@ -1,7 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-char *_memcpy(char *dest, char *src, unsigned int n);
 char *_strstr(char *haystack, char *needle);
 int _putchar(char c);
 void print_chessboard(char (*a)[8]);
