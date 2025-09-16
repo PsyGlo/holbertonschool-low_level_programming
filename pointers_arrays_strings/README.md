@@ -1,5 +1,6 @@
 Pointers, Arrays, and Strings
-hn
+
+
 This directory contains C programming exercises focused on pointers, arrays, and string manipulation. These are core topics in C that enable direct memory access, efficient data handling, and flexible string operations.
 
 Through these exercises, students explore how to use pointers to access and modify arrays, work with C-style strings, and implement common string functions. Mastery of these concepts is essential for understanding low-level programming, memory management, and building efficient programs.
